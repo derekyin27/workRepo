@@ -12,4 +12,13 @@ KREWES = {
                 'Tammy', 'Albert', 'Kazi', 'Derek', 'Brandon', 'Kenneth', 'Lauren',
                 'Biraj', 'Jeff', 'Jackson', 'Taejoon', 'Kevin', 'Jude', 'Sophie', 'Henry',
                 'Coby', 'Manfred', 'Leia', 'Ahmed', 'Winston']}
-randTeam = random.randint(0,2)
+
+
+def randStudent():
+    teams = ['orpheus', 'rex', 'endymion']
+    randTeam = teams[random.randint(0,2)]
+    randPerson = KREWES[randTeam][random.randint(0, len(randTeam)-1)]
+    print (randPerson)
+
+
+randStudent();
